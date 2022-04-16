@@ -219,7 +219,7 @@ footer a {
 
 .bg-monstera { 
     background-image: url("/images/the-green-plant-paradise5.jpg");
-    background-position: 50% 30%; 
+    background-position: 50% 5%; 
 }
 
 .bg-who { 
@@ -228,6 +228,28 @@ footer a {
 
 .bg-shop { 
     background-image: url("/images/shop.jpg"); 
+}
+
+.bg-mario { 
+    background-image: url("/images/mario.jpg"); 
+}
+
+.bg-bowser { 
+    background-image: url("/images/bowser.jpg"); 
+    background-position: 77% 50%; 
+}
+
+.bg-princess { 
+    background-image: url("/images/prinsessan.jpg"); 
+}
+
+.bg-wario { 
+    background-image: url("/images/wario.jpg"); 
+    background-position: 90% 50%; 
+}
+
+.bg-toad { 
+    background-image: url("/images/svampen.jpg"); 
 }
 
 .bg-dark   { 
