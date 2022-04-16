@@ -37,8 +37,8 @@ body {
     border: 2px solid #98b89b;
 }
 
-.m-l-1     { margin-left: 1rem;  }
-.m-r-1     { margin-right: 1rem; }
+.m-l     { margin-left: 5%;  }
+.m-r     { margin-right: 5%; }
 
 .padded    { padding: 5%;   }
 .padded-sm { padding: 1rem; }
