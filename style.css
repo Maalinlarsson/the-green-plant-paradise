@@ -222,6 +222,14 @@ footer a {
     background-position: 50% 30%; 
 }
 
+.bg-who { 
+    background-image: url("/images/who-are-we.jpg"); 
+}
+
+.bg-shop { 
+    background-image: url("/images/shop.jpg"); 
+}
+
 .bg-dark   { 
     background-color: #557b59; 
     color: white;
