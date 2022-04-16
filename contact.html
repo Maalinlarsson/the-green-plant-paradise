@@ -4,6 +4,9 @@
 <!-- This is the head of our html where we add external resources and metadata -->
 <head>
 
+    <!-- Viewport meta --->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Title of the website -->
     <title>Contact the green plats paradise </title>
         
@@ -27,39 +30,55 @@
 <!-- This is the body, this is where all of your content goes.  -->
 <body>
 
-<!----------------------- Header banner ------------------------>
-<header class="grid-middle">
-    <nav class="col-4 right"> 
-        <a href="/index.html"> Home </a>
-        <a href="/about.html"> About </a>
-    </nav>
-    <div class="col-4">
-        <h2 class="logo"> The green plant paradise </h2>
-    </div>
-    <nav class="col-4 left"> 
-        <a href="/our-products.html"> Our products </a>
-        <a href="/contact.html"> Contact </a>
-    </nav>
-</header>
-
-
-
-<!-----------------------Footer ------------------------>
-<footer class="padded grid text-center bg-dark">
-    <div class="col-12">
-        <h2> Let's 
-            <br> <span class="featured-text">connect</span> 
-        </h2>
-        
-    </div>
-    <div class="col-12">
-        <nav class="social-links">
-            <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
-            <a href="#"> <i class="fa-brands fa-instagram-square"></i> </a>
-            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+    <!----------------------- Header banner ------------------------>
+    <header class="grid-middle">
+        <nav class="col-4 right"> 
+            <a href="/index.html"> Home </a>
+            <a href="/about.html"> About </a>
         </nav>
-    </div>
-</footer>
+        <div class="col-4">
+            <h2 class="logo"> The green plant paradise </h2>
+        </div>
+        <nav class="col-4 left"> 
+            <a href="/our-products.html"> Our products </a>
+            <a href="/contact.html"> Contact </a>
+        </nav>
+    </header>
+
+
+    <!-----------------------  Contact form ------------------------>
+    <section class="padded grid">
+     <div class="col-6">
+        <form>
+            <label for="_name"> Your name </label>
+            <input type="text" name="_name" id="_name" placeholder="Your name" />
+            
+            <label for="_replyto"> Your email </label>
+            <input type="email" name="_replyto" id="_replyto" placeholder="Email" />
+            
+            <label for="message"> What's on your mind? </label>
+            <textarea name="message" id="message" placeholder="Tell me everything.." rows="4"></textarea>
+            
+            <button type="submit" class="button"> SUBMIT </button>
+        </form>
+     </div>
+    </section>
+    <!-----------------------Footer ------------------------>
+    <footer class="padded grid text-center bg-dark">
+        <div class="col-12">
+            <h2> Let's 
+                <br> <span class="featured-text">connect</span> 
+            </h2>
+            
+        </div>
+        <div class="col-12">
+            <nav class="social-links">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="#"> <i class="fa-brands fa-instagram-square"></i> </a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+            </nav>
+        </div>
+    </footer>
 
 
 
