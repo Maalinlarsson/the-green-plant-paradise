@@ -300,6 +300,11 @@ footer a {
     background-image: url("/images/dieffenbachia.jpg"); 
 }
 
+.bg-map { 
+    background-image: url("/images/map.png"); 
+}
+
+
 .bg-dark   { 
     background-color: #557b59; 
     color: white;
