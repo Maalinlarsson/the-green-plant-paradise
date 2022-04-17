@@ -183,8 +183,7 @@ footer a {
 
 .contact-a {
     border: none;
-    display: inline-block;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2%;
     margin-bottom: 2rem;
     color: #98b89b;
@@ -265,6 +264,42 @@ footer a {
     background-image: url("/images/svampen.jpg"); 
 }
 
+.bg-yucca { 
+    background-image: url("/images/yucca.jpg"); 
+    background-position: 50% 30%; 
+}
+
+.bg-peperomia { 
+    background-image: url("/images/peperomia.jpg"); 
+}
+
+.bg-pearls { 
+    background-image: url("/images/string-of-pearls.jpg");
+    background-position: 50% 57%;  
+}
+
+.bg-english-ivy { 
+    background-image: url("/images/english-ivy.jpg"); 
+}
+
+.bg-zz { 
+    background-image: url("/images/zz-plant.jpg");
+    background-position: 50% 30%;  
+}
+
+.bg-calathea-ornata { 
+    background-image: url("/images/calathea-ornata.jpg"); 
+}
+
+.bg-schefflera { 
+    background-image: url("/images/schefflera.jpg"); 
+    background-position: 50% 20%; 
+}
+
+.bg-dieffenbachia { 
+    background-image: url("/images/dieffenbachia.jpg"); 
+}
+
 .bg-dark   { 
     background-color: #557b59; 
     color: white;
@@ -329,6 +364,10 @@ label {
     padding: 0.5rem 2rem;
     margin-top: 1rem;
     appearance: none;
+  }
+
+  button:hover {
+      color: #557b59;
   }
 
   input:focus,
