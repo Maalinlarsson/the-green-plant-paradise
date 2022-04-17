@@ -181,6 +181,19 @@ footer a {
     margin-top: 2rem;
 }
 
+.contact-a {
+    border: none;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2%;
+    margin-bottom: 2rem;
+    color: #98b89b;
+}
+
+.contact-a:hover {
+    color: #557b59;
+}
+
 /*--------------  Banner styles --------------*/
 .banner-section {
     background-image: url("/images/the-green-plant-paradise4.jpg");
@@ -272,7 +285,7 @@ it can't be applied to the column itself. ------*/
 .bg-pos-r      { background-position: right;  }
 
 
-/*-------------- Font awesome icon grid --------------*/
+/*-------------- Font awesome icons styles --------------*/
 .icon {
 display: block;
 text-align: center;
