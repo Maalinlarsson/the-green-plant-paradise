@@ -183,6 +183,7 @@ footer a {
 
 .contact-a {
     border: none;
+    display: inline-block;
     font-size: 2rem;
     padding: 2%;
     margin-bottom: 2rem;
