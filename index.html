@@ -4,7 +4,7 @@
 <!-- This is the head of our html where we add external resources and metadata -->
 <head>
 
-    <!-- Viewport meta --->
+    <!-- Viewport meta for responsive --->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the website -->
@@ -32,14 +32,21 @@
 
     <!----------------------- Header banner ------------------------>
     <header class="grid-middle">
-        <nav class="col-4 right"> 
+        <nav class="col-4 right hide-link"> 
             <a href="/index.html"> Home </a>
             <a href="/about.html"> About </a>
         </nav>
-        <div class="col-4">
-            <h2 class="logo"> The green plant paradise </h2>
+        <div class="col-4_xs-12 custom-stack">
+            <h1 class="logo"> The green plant paradise </h1>
         </div>
-        <nav class="col-4 left"> 
+        <nav class="col-4 left hide-link"> 
+            <a href="/our-products.html"> Our products </a>
+            <a href="/contact.html"> Contact </a>
+        </nav>
+
+        <nav class="col-12 show-link">
+            <a href="/index.html"> Home </a>
+            <a href="/about.html"> About </a>
             <a href="/our-products.html"> Our products </a>
             <a href="/contact.html"> Contact </a>
         </nav>
@@ -52,15 +59,15 @@
 
     <!----------------------- Icon grid ------------------------>
     <section class="padded grid-center-spaceAround bg-dark">
-        <div class="padded-sm text-center col-3"> 
+        <div class="padded-sm text-center col-3_sm-12"> 
             <i class="fa-brands fa-pagelines icon"></i>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit. </p>
         </div>
-        <div class="padded-sm text-center col-3">
+        <div class="padded-sm text-center col-3_sm-12">
             <i class="fa-solid fa-leaf icon"></i>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit. </p>
         </div>
-        <div class="padded-sm text-center col-3">
+        <div class="padded-sm text-center col-3_sm-12">
             <i class="fa-brands fa-canadian-maple-leaf icon"></i>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit. </p>
         </div>
@@ -71,23 +78,23 @@
     <section class="grid-Around padded text-center">
 
         <!------ First row ------>
-        <div class="bg-image tall-60 bg-plants margin-r col-5"> 
+        <div class="bg-image tall-60 bg-plants margin-r col-5 hide-custom"> 
                     <!-- background image two plants --> 
         </div>
-        <div class="padded border col-5-middle">
+        <div class="padded border col-5_xs-12-middle custom-stack">
             <h2> Live in a  <span class="featured-text"> green </span> paradise </h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
             <p> nostrum itaque facere? Nemo nihil itaque odio? </p>
         </div>
 
         <!------ Second row ------>
-        <div class="padded border margin-t col-5-middle">
+        <div class="padded border margin-t col-5_xs-12-middle custom-stack">
             <h2> Get back fresh
                 <span class="featured-text"> air </span> from the plants 
             </h2>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic, nostrum itaque facere? Nemo nihil itaque odio? </p>
-        </div>
-        <div class="bg-image bg-leafs-2 margin-l margin-t tall-60 col-5"> 
+            </div>
+            <div class="bg-image bg-leafs-2 margin-l margin-t custom-margin-l-0  tall-60 col-5_xs-12-middle custom-stack"> 
                     <!-- background image one leaf --> 
         </div>
     </section>
