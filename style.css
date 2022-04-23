@@ -387,7 +387,8 @@ label {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md
+.show-custom {
 	display: none;
 }
 
@@ -470,17 +471,13 @@ label {
         max-width: 100%;
     }
 
-    .hide-custom { display: none; }
+    .hide-custom { display: none;  }
+    .show-cutom  { display: block; }
 
-    h2 { font-size: 2rem; }
-    h3.big-text {font-size: 3.5rem; }
-
-    .custom-stack-2 { 
-        flex-basis: 20%;
-        max-width: 20;
-    }
+    h2          { font-size: 2rem;   } 
+    h2.story    { font-size: 1.8rem; }   
+    h3.big-text {font-size: 3.5rem;  }
     
-
     }
 
 /* Xsmall media query (36em / 576px)-----*/
@@ -516,7 +513,14 @@ label {
     .xs-margin-r-0  { margin-right: 0;      }
 
     .icon { font-size: 2.5rem; }
-    h3.big-text {font-size: 3rem; }
+
+    h3.big-text { font-size: 3rem;    }
+    h2.story    { font-size: 1.5rem;  }
+    h2.xs-h2    { font-size: 1.5rem;  }
+
+    .xs-custom { 
+        max-width: 50%;
+    }
 
     .flex-flip-xs   { flex-direction: column-reverse; }
     }
