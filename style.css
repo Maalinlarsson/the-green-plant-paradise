@@ -447,7 +447,12 @@ label {
     .sm-margin-l-0  { margin-left: 0;       }
     .sm-margin-r-0  { margin-right: 0;      }
 
-    h1 { font-size: 1.7rem; }
+    .sm-margin-t-2  { margin-top: 2rem;      }
+
+    h1          { font-size: 1.7rem;  }
+    h2.contact  { font-size: 2rem;    }
+    h3.contact  { font-size: 1.6rem;  }
+    p.contact   { font-size: 1.6rem;  }
 
     }
 
@@ -517,10 +522,9 @@ label {
     h3.big-text { font-size: 3rem;    }
     h2.story    { font-size: 1.5rem;  }
     h2.xs-h2    { font-size: 1.5rem;  }
-
-    .xs-custom { 
-        max-width: 50%;
-    }
+    h2.contact  { font-size: 1.6rem;  }
+    h3.contact  { font-size: 1.3rem;  }
+    p.contact   { font-size: 1.3rem;  }
 
     .flex-flip-xs   { flex-direction: column-reverse; }
     }
