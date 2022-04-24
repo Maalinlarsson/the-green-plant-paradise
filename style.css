@@ -466,7 +466,7 @@ label {
         padding: 0.5rem;
     }
 
-    .custom-margin-l-0  { margin-left: 0;       }
+    .custom-margin-l-0  { margin-left: 0;    }
 
     .hide-link      { display: none;         }
     .show-link      { display: inline-block; }
@@ -526,14 +526,4 @@ label {
     h3.contact  { font-size: 1.3rem;  }
     p.contact   { font-size: 1.3rem;  }
 
-    .flex-flip-xs   { flex-direction: column-reverse; }
     }
-
-
-    /*
-    BILDER TEX: 
-    .xs-tall-30     { max-height: 40vh;     }
-    */
-
-    /* OOOOOOBBBBSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    ändra flex-flip */
