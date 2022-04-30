@@ -1,0 +1,529 @@
+/*-------------- Comments --------------*/ 
+/*
+Colors:
+Green:         #557b59;
+Lightgreen:    #98b89b;
+*/
+
+/*-------------- CSS reset styles --------------*/
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+/*-------------- Optional padding to override default gridlex columns --------------*/
+[class*=col] { padding: 0; }
+
+
+/*-------------- Universal styles & utility classes --------------*/
+.border {
+    border: 2px solid #98b89b;
+}
+
+/* Tall utility Classes -----*/
+.tall-20   {min-height:  20vh; } 
+.tall-30   {min-height:  30vh; } 
+.tall-40   {min-height:  40vh; } 
+.tall-50   { min-height: 50vh; }
+.tall-60   { min-height: 60vh; }
+.tall-70   { min-height: 70vh; }
+.tall-80   { min-height: 80vh; }
+.tall-90   { min-height: 90vh; }
+.tall-100  { min-height: 100vh }
+
+/* Padding utility Classes -----*/
+.padded-sm  { padding: 2.5%;        }
+.padded     { padding: 5%;          }
+.padded-lg  { padding: 10%          }
+
+.padded-05  { padding: 0.5rem;      }
+.padded-1   { padding: 1rem;        }
+.padded-2   { padding: 2rem;        }
+
+.padded-t   { padding-top: 5%;      }
+.padded-b   { padding-bottom: 5%;   }
+.padded-l   { padding-left: 5%;     }
+.padded-r   { padding-right: 5%;    }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem;    }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem;   }
+.padded-r-1 { padding-right: 1rem;  }
+
+.padded-t-2 { padding-top: 2rem;    }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem;   }
+.padded-r-2 { padding-right: 2rem;  }
+
+.padded-t-0 { padding-top: 0;       }
+.padded-b-0 { padding-bottom: 0;    }
+.padded-l-0 { padding-left: 0;      }
+.padded-r-0 { padding-right: 0;     }
+
+/* Margin utility Classes -----*/
+.margin-t   { margin-top: 5%;       }
+.margin-b   { margin-bottom: 5%;    }
+.margin-l   { margin-left: 5%;      }
+.margin-r   { margin-right: 5%;     }
+
+.margin-t-1 { margin-top: 1rem;     }
+.margin-b-1 { margin-bottom: 1rem;  }
+.margin-l-1 { margin-left: 1rem;    }
+.margin-r-1 { margin-right: 1rem;   }
+
+.margin-t-2 { margin-top: 2rem;     }
+.margin-b-2 { margin-bottom: 2rem;  }
+.margin-l-2 { margin-left: 2rem;    }
+.margin-r-2 { margin-right: 2rem;   }
+
+.margin-t-0 { margin-top: 0;        }
+.margin-b-0 { margin-bottom: 0;     }
+.margin-l-0 { margin-left: 0;       }
+.margin-r-0 { margin-right: 0;      }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
+/*--------------  Typography styles --------------*/
+body { 
+    font-family: 'Playfair Display', serif;
+    color: #192B37;
+}
+
+h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #98b89b;
+}
+
+li { 
+    padding-left: 1rem; 
+    line-height: 2rem;
+}
+
+.featured-text          { color: #98b89b;    }
+.white-text             { color: white;      }
+
+.small-text             { font-size: 1.5rem;   }
+.medium-text            { font-size: 2rem;     }
+.big-text               { font-size: 4.5rem;   }
+
+.font-weight-light      { font-weight: 200;    }
+.font-weight-normal     { font-weight: normal; }
+.font-weight-extra-bold { font-weight: 800;    }
+
+.text-left              { text-align: left;    }
+.text-center            { text-align: center;  }
+.text-right             { text-align: right;   }
+
+/*-------------- Header & footer styles --------------*/
+header a {
+    color: inherit;
+    text-decoration: none;
+    /* border: 1px solid grey; */
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  
+header {
+    padding: 2% 5%;
+    border: 1px solid #98b89b;
+    text-align: center;
+  }
+  
+h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+  
+footer a {
+    border: none;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 2%;
+    margin-top: 2rem;
+}
+
+.contact-a {
+    border: none;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 2%;
+    margin-bottom: 2rem;
+    color: #98b89b;
+}
+
+.contact-a:hover {
+    color: #557b59;
+}
+
+.show-link { display: none; }
+
+/*--------------  Banner styles --------------*/
+.banner-section {
+    background-image: url("/images/the-green-plant-paradise4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/*--------------  Background and images styles --------------*/
+.bg-image {
+    background-image: url("/images/the-green-plant-paradise4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: grey;  /* A fall-back color while images are loading -----*/ 
+}
+
+.bg-plants { 
+    background-image: url("/images/the-green-plant-paradise3.jpg");
+    background-position: 50% 35%; 
+}
+
+.bg-leafs { 
+    background-image: url("/images/the-green-plant-paradise1.jpg"); 
+    background-position: 50% 35%; 
+}
+
+.bg-leafs-opacity { 
+    background-image: url("/images/the-green-plant-paradise-opacity.jpg"); 
+    background-position: 50% 35%; 
+}
+
+.bg-leafs-2 { 
+    background-image: url("/images/the-green-plant-paradise2.jpg"); 
+    background-position: 100% 20%;
+}
+
+.bg-monstera { 
+    background-image: url("/images/the-green-plant-paradise5.jpg");
+    background-position: 50% 5%; 
+}
+
+.bg-who { 
+    background-image: url("/images/who-are-we.jpg"); 
+}
+
+.bg-shop { 
+    background-image: url("/images/shop.jpg"); 
+}
+
+.bg-mario { 
+    background-image: url("/images/mario.jpg"); 
+}
+
+.bg-bowser { 
+    background-image: url("/images/bowser.jpg"); 
+    background-position: 65% 50%; 
+}
+
+.bg-princess { 
+    background-image: url("/images/prinsessan.jpg"); 
+}
+
+.bg-wario { 
+    background-image: url("/images/wario.jpg"); 
+    background-position: 90% 50%; 
+}
+
+.bg-toad { 
+    background-image: url("/images/svampen.jpg"); 
+}
+
+.bg-yucca { 
+    background-image: url("/images/yucca.jpg"); 
+    background-position: 50% 30%; 
+}
+
+.bg-peperomia { 
+    background-image: url("/images/peperomia.jpg"); 
+}
+
+.bg-pearls { 
+    background-image: url("/images/string-of-pearls.jpg");
+    background-position: 50% 57%;  
+}
+
+.bg-english-ivy { 
+    background-image: url("/images/english-ivy.jpg"); 
+}
+
+.bg-zz { 
+    background-image: url("/images/zz-plant.jpg");
+    background-position: 50% 30%;  
+}
+
+.bg-calathea-ornata { 
+    background-image: url("/images/calathea-ornata.jpg"); 
+}
+
+.bg-schefflera { 
+    background-image: url("/images/schefflera.jpg"); 
+    background-position: 50% 20%; 
+}
+
+.bg-dieffenbachia { 
+    background-image: url("/images/dieffenbachia.jpg"); 
+}
+
+.bg-map { 
+    background-image: url("/images/map.png"); 
+}
+
+
+.bg-dark   { 
+    background-color: #557b59; 
+    color: white;
+}
+
+/* Aspect ratios with percentage unit are only effective if the element 
+(the <div>) is inside a parent container or column, 
+it can't be applied to the column itself. ------*/
+.landscape     { padding-bottom: 66%;         }
+.portrait-tall { padding-bottom: 175%;        }
+.portrait      { padding-bottom: 125%;        }
+.square        { padding-bottom: 100%;        }
+
+/*  Background position ------*/
+.bg-pos-t      { background-position: top;    }
+.bg-pos-b      { background-position: bottom; }
+.bg-pos-l      { background-position: left;   }
+.bg-pos-r      { background-position: right;  }
+
+
+/*-------------- Font awesome icons styles --------------*/
+.icon {
+display: block;
+text-align: center;
+margin-bottom: 2rem;
+font-size: 3rem;
+}
+
+/*-------------- Form styles --------------*/
+form input, 
+form textarea {
+  width: 100%;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 2px solid #98b89b;
+}
+
+input,
+textarea {
+  border: 2px solid #98b89b;
+  background-color: #e3ece4;
+  outline: none;
+}
+
+label {
+    color: #557b59;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  button {
+    border: 2px solid #557b59;
+    background-color: white;
+    color: #98b89b;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    appearance: none;
+  }
+
+  button:hover {
+      color: #557b59;
+  }
+
+  input:focus,
+  textarea:focus {
+  border-color: #557b59;
+}
+
+/*-------------- General CSS Responsive Styles (Apply everywhere unless overridden) --------------*/
+
+.show-xs, 
+.show-sm,
+.show-md
+.show-custom {
+	display: none;
+}
+
+/*-------------- Media query --------------*/
+
+/* Medium media query (64em / 1024px)-----*/
+/* Styles added here will apply at devices smaller than 1024px -----*/
+@media (max-width: 64em) {
+    
+    /* Temporary visual hint for responsive editing, delete later -----*/
+    body {
+        border: 2px solid red; 
+        padding: 0.5rem;
+    }
+
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+
+    h1 { font-size: 2rem; }
+
+    }
+
+
+/* Small media query (48em / 768px)-----*/
+/* Styles added here will apply at devices smaller than 768px -----*/
+@media (max-width: 48em) {
+
+    /* Temporary visual hint for responsive editing, delete later -----*/
+    body { 
+        border: 2px solid blueviolet;
+        padding: 0.5rem;
+        }
+
+    html { font-size: 14px; }
+
+    p { font-size: 1.1rem; }
+
+    .show-sm        { display: block;       }
+    .hide-sm        { display: none;        }
+           
+    .sm-text-center { text-align: center;   }
+    .sm-text-left   { text-align: left;     }
+    .sm-text-right  { text-align: right;    }
+      
+    .sm-padded      { padding: 5%;          }
+    .sm-padded-1    { padding: 1rem;        }
+    .sm-padded-05   { padding: 0.5rem;      }
+      
+    .sm-padded-t-0  { padding-top: 0;       }
+    .sm-padded-b-0  { padding-bottom: 0;    }
+    .sm-padded-l-0  { padding-left: 0;      }
+    .sm-padded-r-0  { padding-right: 0;     }
+        
+    .sm-margin-t-0  { margin-top: 0;        }
+    .sm-margin-b-0  { margin-bottom: 0;     }
+    .sm-margin-l-0  { margin-left: 0;       }
+    .sm-margin-r-0  { margin-right: 0;      }
+
+    .sm-margin-t-2  { margin-top: 2rem;      }
+
+    h1          { font-size: 1.7rem;  }
+    h2.contact  { font-size: 2rem;    }
+    h3.contact  { font-size: 1.6rem;  }
+    p.contact   { font-size: 1.6rem;  }
+
+    }
+
+/* Custom media query (40em / 640px)-----*/
+/* Styles added here will apply at devices smaller than 640px -----*/
+@media (max-width: 40em) {
+
+    /* Temporary visual hint for responsive editing, delete later -----*/
+    body { 
+        border: 2px solid lawngreen;
+        padding: 0.5rem;
+    }
+
+    .custom-margin-l-0  { margin-left: 0;    }
+
+    .hide-link      { display: none;         }
+    .show-link      { display: inline-block; }
+
+    [class*=grid] .custom-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .hide-custom { display: none;  }
+    .show-cutom  { display: block; }
+
+    h2          { font-size: 2rem;   } 
+    h2.story    { font-size: 1.8rem; }   
+    h3.big-text {font-size: 3.5rem;  }
+    
+    }
+
+/* Xsmall media query (36em / 576px)-----*/
+/* Styles added here will apply at devices smaller than 576px -----*/
+@media (max-width: 36em) {
+
+    /* Temporary visual hint for responsive editing, delete later -----*/
+    body { 
+        border: 2px solid burlywood;
+        padding: 0.5rem;
+    }
+
+    .show-xs        { display: block;        }
+    .hide-xs        { display: none;         }
+
+    .xs-text-center { text-align: center;    }
+    .xs-text-left   { text-align: left;      }
+    .xs-text-right  { text-align: right;     }
+
+    .xs-padded      { padding: 5%;          }
+    .xs-padded-lg   { padding: 10%;         }
+    .xs-padded-1    { padding: 1rem;        }
+    .xs-padded-05   { padding: 0.5rem;      }
+      
+    .xs-padded-t-0  { padding-top: 0;       }
+    .xs-padded-b-0  { padding-bottom: 0;    }
+    .xs-padded-l-0  { padding-left: 0;      }
+    .xs-padded-r-0  { padding-right: 0;     }
+        
+    .xs-margin-t-0  { margin-top: 0;        }
+    .xs-margin-b-0  { margin-bottom: 0;     }
+    .xs-margin-l-0  { margin-left: 0;       }
+    .xs-margin-r-0  { margin-right: 0;      }
+
+    .icon { font-size: 2.5rem; }
+
+    h3.big-text { font-size: 3rem;    }
+    h2.story    { font-size: 1.5rem;  }
+    h2.xs-h2    { font-size: 1.5rem;  }
+    h2.contact  { font-size: 1.6rem;  }
+    h3.contact  { font-size: 1.3rem;  }
+    p.contact   { font-size: 1.3rem;  }
+
+    }
