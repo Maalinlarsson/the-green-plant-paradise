@@ -198,36 +198,43 @@ footer a {
 
 /*--------------  Mobile menu styles --------------*/
 .mobile-menu {
+    opacity: 0.8;
+    text-align: right;
     position: fixed;
-    top: 12%;
+    display: none;
+    top: 0;
     bottom: 0;
-    left: 50%;
-    z-index: 1;
+    right: 0;
+    left: 70%;
+    background-color: #AAE096;
 }
 
 .mobile-menu a {
     display: block;
     font-size: 1.5rem;
-    padding: 0.6rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    border: none;
+    padding: 4vh;
 }
 
 .mobile-menu a:hover {
-    color: #21431E;
+    color: #4da334;
 }
 
 .hamburger-button {
-    color: #73CA59;
+    color: #21431E;
     position: relative;
     z-index: 2;
-    margin-bottom: 1rem;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .hamburger-button i {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: -0.8rem;
 }
+
+.hamburger-button.active {
+    color: #73CA59;
+  }
 
 /*--------------  Banner styles --------------*/
 .banner-section {
@@ -557,6 +564,16 @@ label {
     .xs-margin-r-0  { margin-right: 0;      }
 
     .icon { font-size: 2.5rem; }
+
+    .mobile-menu {
+        left: 60%;
+        
+    }
+    .mobile-menu a {
+        font-size: 1.2rem;
+        padding: 3vh;
+        left: 
+    }
 
     h3.big-text { font-size: 3rem;    }
     h2.story    { font-size: 1.5rem;  }
