@@ -1,5 +1,12 @@
 ---
 layout: default
+icon-grid:
+ - icon: fa-brands fa-pagelines icon
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit.
+ - icon: fa-solid fa-leaf icon
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit.
+ - icon: fa-brands fa-canadian-maple-leaf icon
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit.
 ---
 
     <!-----------------------  Banner section ------------------------>
@@ -8,10 +15,14 @@ layout: default
 
     <!----------------------- Icon grid ------------------------>
     <section class="padded grid-center-spaceAround bg-dark">
+
+        {% for item in page.icon-grid %}
         <div class="padded-sm text-center col-3_sm-12"> 
             <i class="fa-brands fa-pagelines icon"></i>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit. </p>
         </div>
+        (% endfor %)
+
         <div class="padded-sm text-center col-3_sm-12">
             <i class="fa-solid fa-leaf icon"></i>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. Recusandae aliquam fugit autem iure eos repudiandae, perferendis voluptas voluptate labore esse odit. </p>
