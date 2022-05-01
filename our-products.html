@@ -1,5 +1,33 @@
 ---
 layout: default
+products:
+ - heading: String Of Pearls
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+   heading2: Peperomia
+   products_image2: /images/peperomia.jpg
+   description2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: Peperomia
+   products_image: /images/peperomia.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: English Ivy
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: ZZ Plant
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: String Of Pearls
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: String Of Pearls
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: String Of Pearls
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: String Of Pearls
+   products_image: /images/string-of-pearls.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
 ---
 
     <!-----------------------  Banner section ------------------------>
@@ -10,23 +38,28 @@ layout: default
     <section class="grid padded-sm bg-dark">
 
         <!------ First row ------>
+        {% for item in page.products %}
         <div class="col-12 grid-spaceAround">
-            <div class="bg-image bg-pearls col-2_sm-4 hide-xs margin-b-1"> </div>
-                        <!-- background image string of pearls --> 
+            <!-- background image string of pearls --> 
+            <div class="bg-image col-2_sm-4 hide-xs margin-b-1" style="background-image: url('{{item.products_image}}')"> </div>
         
             <div class="padded text-center col-4_sm-6_xs-12">
-                    <h3> String Of Pearls </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
+                    <h3> {{item.heading}} </h3>
+                    <p> {{item.description}} </p>
             </div>
 
             <div class="padded text-center col-4_sm-6_xs-12">
-                <h3> Peperomia </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
+                <h3> {{item.heading2}} </h3>
+                <p> {{item.description2}} </p>
             </div>
-            <div class="bg-image bg-peperomia col-2_sm-4 hide-xs margin-b-1"> </div>
-                        <!-- background image peperomia --> 
+            <!-- background image peperomia --> 
+            <div class="bg-image col-2_sm-4 hide-xs margin-b-1" style="background-image: url('{{item.products_image2}}')"> </div>
         </div>
 
+        {% endfor %}
+
+        <h3> Peperomia </h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
         <!------ Second row ------>
         <div class="col-12 grid-spaceAround">
             <div class="bg-image bg-yucca col-2_sm-4 hide-xs margin-b-1"> </div>
