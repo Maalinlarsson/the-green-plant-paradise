@@ -196,6 +196,39 @@ footer a {
 
 .show-link { display: none; }
 
+/*--------------  Mobile menu styles --------------*/
+.mobile-menu {
+    position: fixed;
+    top: 12%;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    border: none;
+}
+
+.mobile-menu a:hover {
+    color: #21431E;
+}
+
+.hamburger-button {
+    color: #73CA59;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.hamburger-button i {
+    font-size: 2rem;
+}
+
 /*--------------  Banner styles --------------*/
 .banner-section {
     background-image: url("/images/the-green-plant-paradise4.jpg");
@@ -387,8 +420,9 @@ label {
 
 .show-xs, 
 .show-sm,
-.show-md
-.show-custom {
+.show-md,
+.show-custom,
+.mob-menu {
 	display: none;
 }
 
@@ -398,11 +432,11 @@ label {
 /* Styles added here will apply at devices smaller than 1024px -----*/
 @media (max-width: 64em) {
     
-    /* Temporary visual hint for responsive editing, delete later -----*/
+    /* Temporary visual hint for responsive editing, delete later -----
     body {
         border: 2px solid red; 
         padding: 0.5rem;
-    }
+    } */
 
     .show-md { display: block; }
     .hide-md { display: none;  }
@@ -416,11 +450,11 @@ label {
 /* Styles added here will apply at devices smaller than 768px -----*/
 @media (max-width: 48em) {
 
-    /* Temporary visual hint for responsive editing, delete later -----*/
+    /* Temporary visual hint for responsive editing, delete later -----
     body { 
         border: 2px solid blueviolet;
         padding: 0.5rem;
-        }
+        } */
 
     html { font-size: 14px; }
 
@@ -460,11 +494,11 @@ label {
 /* Styles added here will apply at devices smaller than 640px -----*/
 @media (max-width: 40em) {
 
-    /* Temporary visual hint for responsive editing, delete later -----*/
+    /* Temporary visual hint for responsive editing, delete later -----
     body { 
         border: 2px solid lawngreen;
         padding: 0.5rem;
-    }
+    } */
 
     .custom-margin-l-0  { margin-left: 0;    }
 
@@ -472,8 +506,13 @@ label {
     .show-link      { display: inline-block; }
 
     [class*=grid] .custom-stack {
-        flex-basis: 100%;
-        max-width: 100%;
+        flex-basis: 90%;
+        max-width: 90%;
+    }
+
+    [class*=grid] .custom-stack-2 {
+        flex-basis: 10%;
+        max-width: 10%;
     }
 
     .hide-custom { display: none;  }
@@ -489,11 +528,11 @@ label {
 /* Styles added here will apply at devices smaller than 576px -----*/
 @media (max-width: 36em) {
 
-    /* Temporary visual hint for responsive editing, delete later -----*/
+    /* Temporary visual hint for responsive editing, delete later -----
     body { 
         border: 2px solid burlywood;
         padding: 0.5rem;
-    }
+    } */
 
     .show-xs        { display: block;        }
     .hide-xs        { display: none;         }
