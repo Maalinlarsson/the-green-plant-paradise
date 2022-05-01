@@ -1,19 +1,33 @@
 ---
 layout: default
+about:
+ - heading: Mario
+   about_image: /images/mario.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: Princess Peach
+   about_image: /images/prinsessan.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: Toad
+   about_image: /images/svampen.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: Wario
+   about_image: /images/wario.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+ - heading: Bowser
+   about_image: /images/bowser.jpg
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
 ---
 
     <!-----------------------  Banner section ------------------------>
     <section class="padded grid text-center tall-30 banner-section"> </section>
-
 
     <!----------------------- Gallery / about section ------------------------>
     <section class="text-center padded">
         <div class="grid-middle border">
 
             <!------ First row ------>
-            <div class="bg-image bg-who padded col-5 tall-40"> 
-                        <!-- background image who are we --> 
-            </div>
+            <!-- background image who are we --> 
+            <div class="bg-image bg-who padded col-5 tall-40"> </div>
             <div class="col-7 padded">
                 <h2 class="xs-h2"> <span class="featured-text"> Who </span> are we? </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
@@ -24,66 +38,34 @@ layout: default
                 <h2 class="xs-h2"> Get to know us <span class="featured-text"> online </span>  </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic, nostrum itaque facere? Nemo nihil itaque odio? </p>
             </div>
-            <div class="bg-image bg-monstera col-5 padded-lg tall-40"> 
-                        <!-- background image monstera --> 
-            </div>
+            <!-- background image monstera --> 
+            <div class="bg-image bg-monstera col-5 padded-lg tall-40"> </div>
 
             <!------ Third row ------>
-            <div class="bg-image bg-shop padded col-5 tall-40"> 
-                        <!-- background image store --> 
-            </div>
+            <!-- background image store --> 
+            <div class="bg-image bg-shop padded col-5 tall-40"> </div>
             <div class="padded col-7">
                 <h2 class="xs-h2"> Meet us in <span class="featured-text"> the store </span> in Pittsburgh </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
             </div>
+
         </div>
     </section>
-
 
     <!----------------------- This is us grid ------------------------>
     <section class="padded grid-center-spaceAround bg-dark">
+
+        {% for item in page.about %}
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image bg-mario tall-30 margin-b-1"></div>
-            <div class="">
-                <h4> Mario </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
-            </div>
-        </div>
-
-        <div class="padded-sm text-center col-2_md-4_xs-12">
-            <div class="bg-image bg-princess tall-30 margin-b-1"></div>
+            <div class="bg-image bg-mario tall-30 margin-b-1" style="url('{{item.about_image}}')"></div>
             <div>
-                <h4> Princess Peach </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
-                </p>
+                <h4> {{item.heading}} </h4>
+                <p> {{item.description}} </p>
             </div>
         </div>
+        {% endfor %}
 
-        <div class="padded-sm text-center col-2_md-4_xs-12">
-            <div class="bg-image bg-toad tall-30 margin-b-1"></div>
-            <div>
-                <h4> Toad </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
-            </div>
-        </div>
-
-        <div class="padded-sm text-center col-2_md-4_xs-12">
-            <div class="bg-image bg-wario tall-30 margin-b-1"></div>
-            <div>
-                <h4> Wario </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
-            </div>
-        </div>
-
-        <div class="padded-sm text-center col-2_md-4_xs-12 center">
-            <div class="bg-image bg-bowser tall-30 margin-b-1"></div>
-            <div>
-                <h4> Bowser </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
-            </div>
-        </div>
     </section>
-
 
      <!----------------------- About us section ------------------------>
     <section class="grid">
