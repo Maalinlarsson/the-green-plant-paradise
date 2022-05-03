@@ -533,9 +533,10 @@ label {
     .hide-custom { display: none;  }
     .show-cutom  { display: block; }
 
-    h2          { font-size: 2rem;   } 
-    h2.story    { font-size: 1.8rem; }   
-    h3.big-text {font-size: 3.5rem;  }
+    h2             { font-size: 2rem;   } 
+    h2.story       { font-size: 1.8rem; }   
+    h3.big-text    { font-size: 3.5rem; }
+    h3.medium-text { font-size: 1.8rem; }
     
     }
 
@@ -583,11 +584,12 @@ label {
         left: 0;
     }
 
-    h3.big-text { font-size: 3rem;    }
-    h2.story    { font-size: 1.5rem;  }
-    h2.xs-h2    { font-size: 1.5rem;  }
-    h2.contact  { font-size: 1.6rem;  }
-    h3.contact  { font-size: 1.3rem;  }
-    p.contact   { font-size: 1.3rem;  }
+    h3.big-text    { font-size: 3rem;    }
+    h3.medium-text { font-size: 1.4rem;  }
+    h2.story       { font-size: 1.5rem;  }
+    h2.xs-h2       { font-size: 1.5rem;  }
+    h2.contact     { font-size: 1.6rem;  }
+    h3.contact     { font-size: 1.3rem;  }
+    p.contact      { font-size: 1.3rem;  }
 
     }
