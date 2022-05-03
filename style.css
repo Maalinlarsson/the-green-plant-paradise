@@ -377,6 +377,64 @@ it can't be applied to the column itself. ------*/
     padding: 0.5%;
 }
 
+.button-gallery {
+    border: 2px solid #98b89b;
+    border-radius: 20px;
+    background-color: white;
+    color:  #557b59;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+}
+
+.button-gallery:hover {
+    border: 2px solid #557b59; 
+    background-color: #98b89b;
+    color: white;
+}
+
+/* Background of gallery when active --------------*/
+.lg-backdrop {
+    background-color: #98b89b;
+}
+
+.lg-backdrop.in {
+    opacity: 0.60;
+}
+
+/* Background of the text in the pop up --------------*/
+.lg-sub-html {
+    background-color: #98b89b;
+}
+
+/* Background-color of the arrows cointainer when you hover over it --------------*/
+.lg-next:hover:not(.disabled), .lg-prev:hover:not(.disabled) {
+    background-color: #98b89b; 
+}
+
+/* Color of the arrows for the scoll menu when it pops up --------------*/
+.lg-show-in .lg-next, .lg-show-in .lg-pager-outer, .lg-show-in .lg-prev, .lg-show-in .lg-toolbar {
+    color: #98b89b;
+}
+
+/* Color of the "close" cross --------------*/
+.lg-toolbar .lg-close::after {
+    background-color:#557b59; 
+}
+
+/* Color of the "close" cross when hovering --------------*/
+.lg-toolbar .lg-icon:hover {
+    color: white;
+}
+
+/* Color of the the numbers in the corner --------------*/
+.lg-counter {
+    color: white;
+}
+
+
+
 /*-------------- Font awesome icons styles (for all the icons on the page) --------------*/
 .icon {
 display: block;
@@ -416,7 +474,7 @@ label {
     background-color: white;
     color: #98b89b;
     font-size: 1rem;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05rem;
     font-weight: bold;
     padding: 0.5rem 2rem;
     margin-top: 1rem;

@@ -39,18 +39,36 @@ gallery:
     <section class="padded grid text-center tall-30 banner-section"> </section>
 
     <!-----------------------  Image Gallery ------------------------>
-    <section class="padded">
-        <h3 class="text-center featured-text"> Image Gallery </h3> 
-        <div class="grid-center gallery">
+    <section class="padded padded-b-0 padded-t-2">
+      <h3 class="text-center featured-text font-weight-light"> Popup image gallery </h3> 
 
-            {% for item in page.gallery %}
+      <!-- Popup image gallery ------------------------>
+      <div class="grid-center gallery" id="lightgallery">
 
-            <div class="{{item.column-size}}">
-                <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}')"></div> 
-            </div>
+         {% for item in page.gallery %}
 
-            {% endfor %}
+         <a class="{{item.column-size}} padded-b-0" href="{{item.gallery_image}}">
+            <div class="bg-image  {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}')"></div> 
+         </a>
+
+         {% endfor %}
            
-        </div> 
+      </div> 
+    </section>
+
+    <section class="padded padded-t-2">
+      <h3 class="text-center featured-text font-weight-light"> Standard image gallery </h3> 
+      <!-- Standard image gallery ------------------------>
+      <div class="grid-center gallery">
+
+         {% for item in page.gallery %}
+         
+         <div class="{{item.column-size}}">
+            <div class="bg-image {{item.aspect-ratio}}" style="background-image: url('{{item.gallery_image}}')"></div> 
+         </div>
+
+         {% endfor %}
+           
+      </div> 
 
     </section>
