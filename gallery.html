@@ -1,0 +1,48 @@
+---
+layout: default
+gallery:
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   gallery_image: /images/calathea-ornata.jpg
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   gallery_image: /images/dieffenbachia.jpg
+ - column-size: col-4_sm-12
+   aspect-ratio: square
+   gallery_image: /images/english-ivy.jpg
+ - column-size: col-6
+   aspect-ratio: landscape
+   gallery_image: /images/peperomia.jpg
+ - column-size: col-6
+   aspect-ratio: landscape
+   gallery_image: /images/schefflera.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   gallery_image: /images/string-of-pearls.jpg
+ - column-size: col-6
+   aspect-ratio: landscape
+   gallery_image: /images/yucca.jpg
+ - column-size: col-6
+   aspect-ratio: landscape
+   gallery_image: /images/zz-plant.jpg
+---
+
+    <!-----------------------  Banner section ------------------------>
+    <section class="padded grid text-center tall-30 banner-section"> </section>
+
+    <!-----------------------  Image Gallery ------------------------>
+    <section class="padded">
+        <h3 class="text-center"> Image Gallery </h3> 
+        <div class="grid-center gallery">
+
+            {% for item in page.gallery %}
+
+            <div class="{{%item.column-size%}}">
+                <div class="bg-image" style="background-image: url('{{%item.gallery_image%}}')"></div> 
+            </div>
+
+            {% endfor %}
+           
+        </div> 
+
+    </section>

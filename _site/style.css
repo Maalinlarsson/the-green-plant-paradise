@@ -356,19 +356,28 @@ footer a {
 /* Aspect ratios with percentage unit are only effective if the element 
 (the <div>) is inside a parent container or column, 
 it can't be applied to the column itself. ------*/
-.landscape     { padding-bottom: 66%;         }
-.portrait-tall { padding-bottom: 175%;        }
-.portrait      { padding-bottom: 125%;        }
-.square        { padding-bottom: 100%;        }
+.landscape      { padding-bottom: 66%;               }
+.landscape-wide { padding-bottom: 56%;               }
+.portrait-tall  { padding-bottom: 175%;              }
+.portrait       { padding-bottom: 125%;              }
+.square         { padding-bottom: 100%;              }
 
 /*  Background position ------*/
-.bg-pos-t      { background-position: top;    }
-.bg-pos-b      { background-position: bottom; }
-.bg-pos-l      { background-position: left;   }
-.bg-pos-r      { background-position: right;  }
+.bg-pos-t       { background-position: top;          }
+.bg-pos-b       { background-position: bottom;       }
+.bg-pos-l       { background-position: left;         }
+.bg-pos-r       { background-position: right;        }
+
+.bg-pos-t-l     { background-position: left top;     }
+.bg-pos-b-r     { background-position: right bottom; }
 
 
-/*-------------- Font awesome icons styles --------------*/
+/*-------------- Image gallery styles --------------*/
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
+
+/*-------------- Font awesome icons styles (for all the icons on the page) --------------*/
 .icon {
 display: block;
 text-align: center;
@@ -376,7 +385,7 @@ margin-bottom: 2rem;
 font-size: 3rem;
 }
 
-/*-------------- Form styles --------------*/
+/*-------------- Form styles (contact form)  --------------*/
 form input, 
 form textarea {
   width: 100%;
@@ -423,7 +432,7 @@ label {
   border-color: #557b59;
 }
 
-/*-------------- General CSS Responsive Styles (Apply everywhere unless overridden) --------------*/
+/*-------------- General CSS Responsive Styles (apply everywhere unless overridden) --------------*/
 
 .show-xs, 
 .show-sm,
@@ -452,7 +461,6 @@ label {
 
     }
 
-
 /* Small media query (48em / 768px)-----*/
 /* Styles added here will apply at devices smaller than 768px -----*/
 @media (max-width: 48em) {
@@ -463,7 +471,7 @@ label {
         padding: 0.5rem;
         } */
 
-    html { font-size: 14px; }
+    html { font-size: 13px; }
 
     p { font-size: 1.1rem; }
 
@@ -572,7 +580,7 @@ label {
     .mobile-menu a {
         font-size: 1.2rem;
         padding: 3vh;
-        left: 
+        left: 0;
     }
 
     h3.big-text { font-size: 3rem;    }
