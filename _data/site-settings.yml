@@ -1,9 +1,7 @@
-
-<!----------------------- Design ------------------------>
 design:
-  dark-text: '#557b59'
-  light-text: '#98b89b'
-  featured-text: '#98b89b'   
-  dark: '#557b59'
-  light: '#98b89b'
-  featured: '#98b89b'
+ dark-text: '#557b59'
+ light-text: '#98b89b'
+ featured-text: '#98b89b'   
+ dark: '#557b59'
+ light: '#98b89b'
+ featured: '#98b89b'
