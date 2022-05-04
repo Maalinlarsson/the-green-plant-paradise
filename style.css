@@ -138,8 +138,11 @@ li {
     line-height: 2rem;
 }
 
-.featured-text          { color: #98b89b;    }
-.white-text             { color: white;      }
+/* Just for trying to add data-styles ------*/
+.white-text             { color: white;               }
+.featured-text          { color: var(---featured-text); }
+.dark-text              { color: var(---dark-text)      }
+.light-text             { color: var(---light-text);    }
 
 .small-text             { font-size: 1.5rem;   }
 .medium-text            { font-size: 2rem;     }
@@ -179,19 +182,6 @@ footer a {
     font-size: 2rem;
     padding: 2%;
     margin-top: 2rem;
-}
-
-.contact-a {
-    border: none;
-    display: inline-block;
-    font-size: 2rem;
-    padding: 2%;
-    margin-bottom: 2rem;
-    color: #98b89b;
-}
-
-.contact-a:hover {
-    color: #557b59;
 }
 
 .show-link { display: none; }
@@ -347,11 +337,10 @@ footer a {
     background-image: url("/images/map.png"); 
 }
 
-
-.bg-dark   { 
-    background-color: #557b59; 
-    color: white;
-}
+/* Just for trying to add data-styles ------*/
+.bg-dark     { background-color: var(---dark);     }
+.bg-featured { background-color: var(---featured); }
+.bg-light    { background-color: var(---light);    }
 
 /* Aspect ratios with percentage unit are only effective if the element 
 (the <div>) is inside a parent container or column, 
@@ -433,8 +422,6 @@ it can't be applied to the column itself. ------*/
     color: white;
 }
 
-
-
 /*-------------- Font awesome icons styles (for all the icons on the page) --------------*/
 .icon {
 display: block;
@@ -490,6 +477,23 @@ label {
   border-color: #557b59;
 }
 
+/*-------------- Social media icons div  --------------*/
+.div-contact {
+    border: 3px solid #98b89b;
+    border-radius: 50% 1%;
+}
+
+.contact-a {
+    border: none;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 5%;
+    color: #98b89b;
+}
+
+.contact-a:hover {
+    color: #557b59;
+}
 /*-------------- General CSS Responsive Styles (apply everywhere unless overridden) --------------*/
 
 .show-xs, 
@@ -554,13 +558,13 @@ label {
     .sm-margin-l-0  { margin-left: 0;       }
     .sm-margin-r-0  { margin-right: 0;      }
 
+    .sm-margin-b-2  { margin-bottom: 2rem;   }
     .sm-margin-t-2  { margin-top: 2rem;      }
 
     h1          { font-size: 1.7rem;  }
     h2.contact  { font-size: 2rem;    }
     h3.contact  { font-size: 1.6rem;  }
     p.contact   { font-size: 1.6rem;  }
-
     }
 
 /* Custom media query (40em / 640px)-----*/
@@ -595,9 +599,8 @@ label {
     h2.story       { font-size: 1.8rem; }   
     h3.big-text    { font-size: 3.5rem; }
     h3.medium-text { font-size: 1.8rem; }
-    
     }
-
+    
 /* Xsmall media query (36em / 576px)-----*/
 /* Styles added here will apply at devices smaller than 576px -----*/
 @media (max-width: 36em) {
