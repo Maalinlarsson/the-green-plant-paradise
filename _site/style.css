@@ -139,7 +139,7 @@ li {
 }
 
 /* Just for trying to add data-styles ------*/
-.white-text             { color: white;               }
+.white-text             { color: var(---white-text);    }
 .featured-text          { color: var(---featured-text); }
 .dark-text              { color: var(---dark-text)      }
 .light-text             { color: var(---light-text);    }

@@ -1,4 +1,5 @@
 design:
+ white-text_color: 'white'
  dark-text_color: '#557b59'
  light-text_color: '#98b89b'
  featured-text_color: '#98b89b'   
