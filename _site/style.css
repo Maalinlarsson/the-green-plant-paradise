@@ -138,8 +138,11 @@ li {
     line-height: 2rem;
 }
 
-.featured-text          { color: #98b89b;    }
-.white-text             { color: white;      }
+/* Just for trying to add data-styles ------*/
+.white-text             { color: white;               }
+.featured-text          { color: var(---featured-text); }
+.dark-text              { color: var(---dark-text)      }
+.light-text             { color: var(---light-text);    }
 
 .small-text             { font-size: 1.5rem;   }
 .medium-text            { font-size: 2rem;     }
@@ -334,11 +337,10 @@ footer a {
     background-image: url("/images/map.png"); 
 }
 
-
-.bg-dark   { 
-    background-color: #557b59; 
-    color: white;
-}
+/* Just for trying to add data-styles ------*/
+.bg-dark     { background-color: var(---dark);     }
+.bg-featured { background-color: var(---featured); }
+.bg-light    { background-color: var(---light);    }
 
 /* Aspect ratios with percentage unit are only effective if the element 
 (the <div>) is inside a parent container or column, 
