@@ -110,8 +110,9 @@ p:last-child {
 	margin-bottom: 0;
 }
 
-h2 { font-size: 2.5rem; }
-h3 { font-size: 1.5rem; }
+h2       { font-size: 2.5rem; }
+h2.story { font-size: 2.2rem; }   
+h3       { font-size: 1.5rem; }
 
 p {
     font-weight: 300;
@@ -519,7 +520,8 @@ label {
     .show-md { display: block; }
     .hide-md { display: none;  }
 
-    h1 { font-size: 2rem; }
+    h1       { font-size: 2rem;   }
+    h2.story { font-size: 1.9rem; }   
 
     }
 
@@ -561,12 +563,18 @@ label {
     .sm-margin-b-2  { margin-bottom: 2rem;   }
     .sm-margin-t-2  { margin-top: 2rem;      }
 
+    .link-underline { 
+        border-bottom: 1px solid; 
+        font-size: 1.7rem;
+    }
+
     h1          { font-size: 1.7rem;  }
+    h2.story    { font-size: 2em;     }   
     h2.contact  { font-size: 2rem;    }
     h3.contact  { font-size: 1.6rem;  }
     p.contact   { font-size: 1.6rem;  }
     }
-
+    
 /* Custom media query (40em / 640px)-----*/
 /* Styles added here will apply at devices smaller than 640px -----*/
 @media (max-width: 40em) {
@@ -594,12 +602,18 @@ label {
 
     .hide-custom { display: none;  }
     .show-cutom  { display: block; }
-
+    
     h2             { font-size: 2rem;   } 
-    h2.story       { font-size: 1.8rem; }   
+    h2.story       { font-size: 1.6rem; }   
     h3.big-text    { font-size: 3.5rem; }
     h3.medium-text { font-size: 1.8rem; }
     }
+
+    .link-underline  { 
+        border-bottom: 1px solid; 
+        font-size: 1.5rem;
+    }
+      
     
 /* Xsmall media query (36em / 576px)-----*/
 /* Styles added here will apply at devices smaller than 576px -----*/
@@ -645,7 +659,11 @@ label {
         left: 0;
     }
 
-    .h3-mobile     { font-size: 1.4rem;  }
+    .link-underline  { 
+        border-bottom: 1px solid; 
+        font-size: 1.2rem;
+    }
+
     h3.big-text    { font-size: 3rem;    }
     h3.medium-text { font-size: 1.4rem;  }
     h2.story       { font-size: 1.5rem;  }
