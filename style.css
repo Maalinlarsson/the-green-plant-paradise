@@ -480,7 +480,7 @@ label {
 /*-------------- Social media icons div  --------------*/
 .div-contact {
     border: 3px solid #98b89b;
-    border-radius: 50% 1%;
+    border-radius: 12rem 3rem;
 }
 
 .contact-a {
@@ -645,6 +645,7 @@ label {
         left: 0;
     }
 
+    .h3-mobile     { font-size: 1.4rem;  }
     h3.big-text    { font-size: 3rem;    }
     h3.medium-text { font-size: 1.4rem;  }
     h2.story       { font-size: 1.5rem;  }
