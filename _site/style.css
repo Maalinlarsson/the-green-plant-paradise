@@ -89,7 +89,9 @@ box-sizing: border-box;
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
-
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+}
 /*--------------  Typography styles --------------*/
 body { 
     font-family: 'Playfair Display', serif;
