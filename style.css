@@ -136,6 +136,10 @@ a:hover {
     color: #98b89b;
 }
 
+a.featured-text:hover {
+    color: #557b59;
+}
+
 li { 
     padding-left: 1rem; 
     line-height: 2rem;
@@ -174,7 +178,7 @@ header {
     text-align: center;
   }
   
-.no-hover a:hover {
+.logo-hover a:hover {
     color: inherit;
 }
 
@@ -501,6 +505,11 @@ label {
 .contact-a:hover {
     color: #557b59;
 }
+
+ /*-------------- Flex flip  --------------*/ 
+.flex-flip{
+    flex-flow:row-reverse wrap;
+  }
 /*-------------- General CSS Responsive Styles (apply everywhere unless overridden) --------------*/
 
 .show-xs, 
@@ -580,6 +589,10 @@ label {
     h3.contact  { font-size: 1.6rem;  }
     p.contact   { font-size: 1.6rem;  }
     }
+
+    .flex-flip{
+        flex-flow:row wrap;
+      }
     
 /* Custom media query (40em / 640px)-----*/
 /* Styles added here will apply at devices smaller than 640px -----*/
