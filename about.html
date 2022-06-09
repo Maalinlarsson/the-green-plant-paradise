@@ -8,6 +8,7 @@ about:
  - heading: Princess Peach
    about_image: /images/prinsessan.jpg
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+   background-position: 48% 62%;
 
  - heading: Toad
    about_image: /images/svampen.jpg
@@ -16,10 +17,12 @@ about:
  - heading: Wario
    about_image: /images/wario.jpg
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
-   
+   background-position: 92% 73%;
+
  - heading: Bowser
    about_image: /images/bowser.jpg
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit.
+   background-position: 61%;
 ---
 
     <!-----------------------  Banner section ------------------------>
@@ -53,7 +56,7 @@ about:
             
             <section class="grid">
                 <!-- background image store --> 
-                <div class="bg-image bg-shop padded col-5_sm-12 tall-40"> </div>
+                <div class="bg-image order bg-shop padded col-5_sm-12 tall-40"> </div>
                 <div class="padded col-7_sm-12">
                     <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> Meet us in <span class="featured-text"> the store </span> in Pittsburgh </h2>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
@@ -67,7 +70,7 @@ about:
 
         {% for item in page.about %}
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('{{item.about_image}}')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('{{item.about_image}}') ; background-position:{{item.background-position}};"></div>
             <div>
                 <h4> {{item.heading}} </h4>
                 <p> {{item.description}} </p>

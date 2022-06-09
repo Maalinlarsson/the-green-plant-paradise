@@ -7,6 +7,17 @@
     <!----------------------- Viewport meta for responsive ----------------------->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!----------------------- Metadata for favicons ----------------------->
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#98b89b">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="msapplication-config" content="/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
 <!----------------------- Title of the website ----------------------->
 <title> The green plants paradise </title>
         
@@ -62,14 +73,14 @@
         <a href="/index.html"> Home </a>
         <a href="/about.html"> About </a>
     </nav>
-    <div class="col-4_xs-12 custom-stack no-hover">
+    <div class="col-4_xs-12 custom-stack logo-hover">
         <a href="/index">
             <h1 class="logo"> The green plant paradise </h1>
         </a>
     </div>
     <nav class="col-4 left hide-link"> 
         <a href="/our-products.html"> Products </a>
-        <a href="/gallery/html"> Gallery </a>
+        <a href="/gallery.html"> Gallery </a>
         <a href="/contact.html"> Contact </a>
     </nav>
 
@@ -93,32 +104,38 @@
 
     <!----------------------- Gallery / about section ------------------------>
     <section class="text-center padded">
-        <div class="grid-middle border flex-flip-alternate">
+        <div class="grid-middle border">
 
             <!------ First row ------>
             <!-- background image who are we --> 
-            <div class="bg-image bg-who padded col-5_sm-12 tall-40"> </div>
-            <div class="col-7_sm-12 padded">
+            <section class="grid">
+                <div class="bg-image bg-who padded col-5_sm-12 tall-40"> </div>
+                <div class="col-7_sm-12 padded">
                 <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> <span class="featured-text"> Who </span> are we? </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
-            </div>
+                </div>
+            </section>
 
             <!------ Second row ------>
-            <div class="col-7_sm-12 padded">
-                <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> Get to know us <span class="featured-text"> online </span>  </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic, nostrum itaque facere? Nemo nihil itaque odio? </p>
-            </div>
-            <!-- background image monstera --> 
-            <div class="bg-image bg-monstera col-5 hide-sm padded-lg tall-40"> </div>
+            <section class="grid flex-flip">
+                <div class="col-7_sm-12 padded">
+                    <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> Get to know us <span class="featured-text"> online </span>  </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic, nostrum itaque facere? Nemo nihil itaque odio? </p>
+                </div>
+                <!-- background image monstera --> 
+                <div class="bg-image bg-monstera col-5 hide-sm padded-lg tall-40"> </div>
+            </section>
 
             <!------ Third row ------>
-            <!-- background image store --> 
-            <div class="bg-image bg-shop padded col-5_sm-12 tall-40"> </div>
-            <div class="padded col-7_sm-12">
-                <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> Meet us in <span class="featured-text"> the store </span> in Pittsburgh </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
-            </div>
-
+            
+            <section class="grid">
+                <!-- background image store --> 
+                <div class="bg-image order bg-shop padded col-5_sm-12 tall-40"> </div>
+                <div class="padded col-7_sm-12">
+                    <h2 class="xs-h2" data-aos="zoom-in" data-aos-duration="2500"> Meet us in <span class="featured-text"> the store </span> in Pittsburgh </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam temporibus dolor accusamus ab esse, non impedit nulla aspernatur error accusantium in hic,</p>
+                </div>
+            </section>
         </div>
     </section>
 
@@ -127,7 +144,7 @@
 
         
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/mario.jpg')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/mario.jpg') ; background-position:;"></div>
             <div>
                 <h4> Mario </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
@@ -135,7 +152,7 @@
         </div>
         
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/prinsessan.jpg')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/prinsessan.jpg') ; background-position:48% 62%;;"></div>
             <div>
                 <h4> Princess Peach </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
@@ -143,7 +160,7 @@
         </div>
         
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/svampen.jpg')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/svampen.jpg') ; background-position:;"></div>
             <div>
                 <h4> Toad </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
@@ -151,7 +168,7 @@
         </div>
         
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/wario.jpg')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/wario.jpg') ; background-position:92% 73%;;"></div>
             <div>
                 <h4> Wario </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>
@@ -159,7 +176,7 @@
         </div>
         
         <div class="padded-sm text-center col-2_md-4_xs-12"> 
-            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/bowser.jpg')"></div>
+            <div class="bg-image tall-30 margin-b-1" style="background-image: url('/images/bowser.jpg') ; background-position:61%;;"></div>
             <div>
                 <h4> Bowser </h4>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa saepe exercitationem sit, corporis quia optio possimus fugit. </p>

@@ -552,6 +552,8 @@ label {
 
     html { font-size: 13px; }
 
+    .order { order: 2; }
+
     p { font-size: 1.1rem; }
 
     .show-sm        { display: block;       }
